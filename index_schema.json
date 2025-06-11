@@ -1,0 +1,119 @@
+{
+  "settings": {
+    "index.knn": true
+  },
+  "mappings": {
+    "properties": {
+      "authors": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "contents": {
+        "type": "text"
+      },
+      "contents-embedding": {
+        "type": "knn_vector",
+        "dimension": 384
+      },
+      "contributor": {
+        "type": "text"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "resource-type": {
+        "type": "keyword"
+      },
+      "spatial-bounding-box": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "spatial-bounding-box-geojson": {
+        "type": "geo_shape"
+      },
+      "spatial-centroid": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "spatial-centroid-geojson": {
+        "type": "geo_shape"
+      },
+      "spatial-coverage": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "spatial-geometry": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "spatial-geometry-geojson": {
+        "type": "geo_shape"
+      },
+      "spatial-georeferenced": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "spatial-index-year": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "spatial-temporal-coverage": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "tags": {
+        "type": "text"
+      },
+      "thumbnail-image": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}
